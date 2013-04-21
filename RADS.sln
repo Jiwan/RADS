@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RADS", "RADS\RADS.vcxproj", "{C9DDC711-3F0F-4D19-8D64-7C0727604B79}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "thirdparty", "thirdparty", "{1C0E688D-54ED-4675-985F-39BD1175B4D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{0F885649-5576-4082-9CD4-01FDD085EBA5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "basictest", "basictest\basictest.vcxproj", "{63A92FF0-B264-4409-91AB-C53E3708A5E2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C9DDC711-3F0F-4D19-8D64-7C0727604B79} = {C9DDC711-3F0F-4D19-8D64-7C0727604B79}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C9DDC711-3F0F-4D19-8D64-7C0727604B79}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C9DDC711-3F0F-4D19-8D64-7C0727604B79}.Debug|Win32.Build.0 = Debug|Win32
+		{C9DDC711-3F0F-4D19-8D64-7C0727604B79}.Release|Win32.ActiveCfg = Release|Win32
+		{C9DDC711-3F0F-4D19-8D64-7C0727604B79}.Release|Win32.Build.0 = Release|Win32
+		{63A92FF0-B264-4409-91AB-C53E3708A5E2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{63A92FF0-B264-4409-91AB-C53E3708A5E2}.Debug|Win32.Build.0 = Debug|Win32
+		{63A92FF0-B264-4409-91AB-C53E3708A5E2}.Release|Win32.ActiveCfg = Release|Win32
+		{63A92FF0-B264-4409-91AB-C53E3708A5E2}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{63A92FF0-B264-4409-91AB-C53E3708A5E2} = {0F885649-5576-4082-9CD4-01FDD085EBA5}
+	EndGlobalSection
+EndGlobal
