@@ -85,9 +85,11 @@
     <ClInclude Include="IAsyncOperation.h" />
     <ClInclude Include="IBase.h" />
     <ClInclude Include="IBuffer.h" />
+    <ClInclude Include="IFindResult.h" />
     <ClInclude Include="IMain.h" />
     <ClInclude Include="IWriter.h" />
     <ClInclude Include="Log.h" />
+    <ClInclude Include="LogType.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />

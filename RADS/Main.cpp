@@ -3,8 +3,9 @@
 #include "IAsyncLoadFile.h"
 #include "IBase.h"
 #include "IBuffer.h"
-#include "IWriter.h"
+#include "LogType.h"
 #include "Log.h"
+#include "IWriter.h"
 
 void RADS::Log::SetLogLevel(TYPE t)
 {

@@ -17,10 +17,7 @@ class DLLExport IAsyncLoadFile : virtual IAsyncOperation
 		}
 
 	private:
-		IAsyncLoadFile& operator=(IAsyncLoadFile const & other)
-		{
-
-		}
+		IAsyncLoadFile& operator=(IAsyncLoadFile const & other);
 };
 
 }

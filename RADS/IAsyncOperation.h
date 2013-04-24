@@ -18,15 +18,9 @@ class DLLExport IAsyncOperation
 		}
 
 	private:
-		IAsyncOperation(IAsyncOperation const & other)
-		{
+		IAsyncOperation(IAsyncOperation const & other);
 
-		}
-
-		IAsyncOperation& operator=(IAsyncOperation const & other)
-		{
-
-		}
+		IAsyncOperation& operator=(IAsyncOperation const & other);
 };
 
 }

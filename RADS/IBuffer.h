@@ -18,15 +18,9 @@ class DLLExport IBuffer
 		}
 
 	private:
-		IBuffer(IBuffer const & other)
-		{
+		IBuffer(IBuffer const & other);
 
-		}
-
-		IBuffer & operator=(IBuffer const & other)
-		{
-
-		}
+		IBuffer & operator=(IBuffer const & other);
 };
 
 }

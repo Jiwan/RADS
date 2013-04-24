@@ -1,5 +1,6 @@
 #pragma once
 #include "boost/smart_ptr/shared_ptr.hpp"
+#include "IFindResult.h"
 
 namespace RADS
 {
@@ -11,8 +12,8 @@ namespace API
 	class IMain
 	{
 		public:
-			// The int is an error occured or not (think so), third parameter is IFindResult i think
-			virtual int FindFile(std::string const & name, char unknow, ) = 0;
+			// The return is an error value (think so), third parameter is IFindResult i think
+			virtual int FindFile(std::string const & name, FindFlags flags, int unknow2) = 0;
 			virtual void OpenFile() = 0;
 			virtual bool DoesFileOrDirectoryExist(std::string const & s) const = 0;
 			virtual void FindBestPath(std::string const & s, std::string* output) const = 0;

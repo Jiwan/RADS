@@ -54,6 +54,12 @@
     <ClInclude Include="IWriter.h">
       <Filter>Header Files\RADS\Log</Filter>
     </ClInclude>
+    <ClInclude Include="LogType.h">
+      <Filter>Header Files\RADS\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="IFindResult.h">
+      <Filter>Header Files\RADS\API</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">

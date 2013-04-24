@@ -1,18 +1,11 @@
 #pragma once
-#include "IWriter.h"
+#include "LogType.h"
 
 namespace RADS
 {
 namespace Log
 {
-	DLLExport enum TYPE
-	{
-		User = 0,
-		Error = 1,
-		Warning = 2,
-		Debug = 3,
-		Verbose = 4
-	};
+	class IWriter;
 
 	DLLExport void SetLogLevel(TYPE t);
 
@@ -27,6 +20,6 @@ namespace Log
 
 	DLLExport void SetLogToConsole(bool enable);
 
-	DLLExport void SetIWriter(RADS::Log::IWriter * const writer);
+	DLLExport void SetIWriter(IWriter * const writer);
 }
 }
