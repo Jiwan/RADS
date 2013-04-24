@@ -13,7 +13,8 @@ namespace API
 	{
 		public:
 			// The return is an error value (think so), third parameter is IFindResult i think
-			virtual int FindFile(std::string const & name, FindFlags flags, int unknow2) = 0;
+			virtual int FindFile(std::string const & name, FindFlags flags, boost::shared_ptr<IFindResult>& result) = 0;
+
 			virtual void OpenFile() = 0;
 			virtual bool DoesFileOrDirectoryExist(std::string const & s) const = 0;
 			virtual void FindBestPath(std::string const & s, std::string* output) const = 0;
@@ -24,6 +25,9 @@ namespace API
 			virtual ~IMain() = 0;
 	};
 
+	/**
+	 *
+	 */
 	DLLExport long CreateMain(boost::shared_ptr<IMain>& main);
 }
 }
