@@ -12,14 +12,19 @@ namespace API
 	class IMain
 	{
 		public:
-			// The return is an error value (think so), third parameter is IFindResult i think
-			virtual int FindFile(std::string const & name, FindFlags flags, boost::shared_ptr<IFindResult>& result) = 0;
+			// The return is an error value (at least i think so)
+			virtual int FindFile(std::string const & name, FindFlags flags, boost::shared_ptr<IFindFileResult>& result) = 0;
 
 			virtual void OpenFile() = 0;
+
 			virtual bool DoesFileOrDirectoryExist(std::string const & s) const = 0;
+			
 			virtual void FindBestPath(std::string const & s, std::string* output) const = 0;
+			
 			virtual void IAsyncLoadFile() = 0;
+			
 			virtual void GetUnknow() = 0; // Get Field 10 in the Main class
+			
 			virtual void GetUnknow2() = 0; // Get Field 18 in the Main class
 
 			virtual ~IMain() = 0;
