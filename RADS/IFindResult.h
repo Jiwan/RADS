@@ -10,8 +10,8 @@ enum FindFlags : char
 class IFindFileResult
 {
 	public:
-		virtual void method1() = 0;
-		virtual void method2() = 0;
+		virtual int Count() = 0;
+		virtual void* /*256 byte size fileinfo*/ GetAt(unsigned int index) = 0;
 
 		virtual ~IFindFileResult()
 		{
